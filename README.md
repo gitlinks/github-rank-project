@@ -32,7 +32,7 @@ The problem with those automatic tools is that the metric they produce does not 
 
 A good illustration of that is [Hacker News](https://news.ycombinator.com/). The idea is that the community votes for the best news posted by peers. Peers that get their news upvoted have their karma improved. The top posts are a comibation of up-votes and freshness. That way the Top news change and they represent a quality sample of what's being published out there. *Without any complicated machine learning in the background*
 
-A solution can be to use this peer rating principle and apply it to the open source world. Having peers score repositories against some defined criterias and weight their vote with their Karma. A user's Karma gets only as good as a combination of the score of the repository he contributed to.
+A solution can be to use this peer rating principle and apply it to the open source world. Having peers score repositories against some defined criterias and weight their vote with their Karma. A user's Karma gets only as good as a combination of the scores of the repositories he contributed to.
 
 We can then add some other automatic metrics in the computing of a repository score once we have defined those relevant.
 
