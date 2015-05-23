@@ -6,4 +6,8 @@ Project to rate quality of github repositories like we vote for cool posts on ha
 ## Ideas
 * Use a Karma system to weight votes on github repositories.
 * Can use stackoverflow karma in the computation of your karma
-* if you have contributed to an upvoted project your karma should benefit from it propertionnaly to your contribution to the project
+* if you have contributed to an upvoted project your karma should benefit from it proportionnaly to your contribution to the project
+
+How is the Karma computed? What is the formula?
+
+How do people vote? Do they make reviews? What are the criteria? Can they leave comments on each criteria?
