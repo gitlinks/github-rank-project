@@ -50,7 +50,7 @@ We can then add some other automatic metrics in the computing of a repository sc
 * A user cannot vote for a repository he contributes to.
 
 #### Scoring criterias 
-Score things from 1 to 5.
+Score things from 1 to 5. While scoring a user has to justify in a comment why he scored the repository as he did.
 
 * Documentation
 * Code Quality
@@ -64,7 +64,3 @@ Score things from 1 to 5.
 * User badges to diplay the repository rank
 * Can use stackoverflow karma in the computation of your karma (Not at the beginning )
 * if you have contributed to an up voted project your karma should benefit from it proportionnaly to your contribution to the project
-
-How is the Karma computed? What is the formula?
-
-How do people vote? Do they make reviews? What are the criteria? Can they leave comments on each criteria?
