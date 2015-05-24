@@ -59,8 +59,17 @@ Score things from 1 to 5. While scoring a user has to justify in a comment why h
 #### Automatic Criterias
 * Community Size
 
+## Technical aspects (WIP)
+
+### Technologies
+Right now the technologies in the pipeline for the implementation are:
+
+* Scala
+* Neo4j
+* Play Framework for scala
+* Angular
+* Sass
+* Bootstrap
+
 ## Ideas
-* Use a Karma system to weight votes on github repositories.
-* User badges to diplay the repository rank
-* Can use stackoverflow karma in the computation of your karma (Not at the beginning )
-* if you have contributed to an up voted project your karma should benefit from it proportionnaly to your contribution to the project
+* User badges to diplay the repository rank and access the rating page of the repository.
