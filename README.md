@@ -45,12 +45,12 @@ We can then add some other automatic metrics in the computing of a repository sc
 
 ### How Repository score should work (WIP)
 #### Rules
-* Score is base on some determined criterias evaluted by other users.
-* Score also be influenced by some key automatic metrics
+* Score is base on some determined criterias evaluated by other users.
+* Score can also be influenced by some key automatic metrics
 * A user cannot vote for a repository he contributes to.
 
 #### Scoring criterias 
-Score things from 1 to 5. While scoring a user has to justify in a comment why he scored the repository as he did.
+Score criterias from 1 to 5. While scoring a user has to justify in a comment why he scored the repository as he did.
 
 * Documentation
 * Code Quality
@@ -72,4 +72,4 @@ Right now the technologies in the pipeline for the implementation are:
 * Bootstrap
 
 ## Ideas
-* User badges to diplay the repository rank and access the rating page of the repository.
+* User badges to display the repository rank and access the rating page of the repository.
