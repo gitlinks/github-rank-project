@@ -50,7 +50,7 @@ We can then add some other automatic metrics in the computing of a repository sc
 * A user cannot vote for a repository he contributes to.
 
 #### Scoring criterias 
-Score criterias from 1 to 5. While scoring a user has to justify in a comment why he scored the repository as he did.
+Score criterias from 1 to 5. While scoring a user can justify in a comment why he scored the repository as he did.
 
 * Documentation
 * Code Quality
