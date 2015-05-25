@@ -6,7 +6,7 @@ Project to rate quality of github repositories like we vote for cool posts on ha
 
 Come and discuss the project with us !
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/callicles/github-rank-project?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 
 ## The Problem
 There are tons of open-source projects out there, especially in the javascript community, and it is difficult to choose between project that does the same thing.
