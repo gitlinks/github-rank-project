@@ -39,6 +39,7 @@ We can then add some other automatic metrics in the computing of a repository sc
 ### How User Karma should work (WIP)
 * Your Karma gets better when you contribute to a well rated project.* 
 * Your Karma dimishes when projects you contribute to are badly rated.*
+* Looking back, people that initialy rated a project accurately should be rewarded by Karma.
 * **(OPTIONAL)** Karma could also be augmented by Stack-Overflow karma.
 
 *: How much it influences your karma should be proportional to your overall contribution.
@@ -48,6 +49,9 @@ We can then add some other automatic metrics in the computing of a repository sc
 * Score is base on some determined criterias evaluated by other users.
 * Score can also be influenced by some key automatic metrics
 * A user cannot vote for a repository he contributes to.
+* Weight score with user usage of the repository. ie if we can detect that one user has used a project, then we should give more weight to its rating.
+* We also should ask a user to review its rating 2 months or so after having rated it for the first time so that he can have a more insightful opinion on a project.
+* Dependencies qualities should also affect score.
 
 #### Scoring criterias 
 Score criterias from 1 to 5. While scoring a user can justify in a comment why he scored the repository as he did.
@@ -59,7 +63,7 @@ Score criterias from 1 to 5. While scoring a user can justify in a comment why h
 #### Automatic Criterias
 * Community Size
 
-## Technical aspects (WIP)
+## Technical aspects
 
 ### Technologies
 Right now the technologies in the pipeline for the implementation are:
