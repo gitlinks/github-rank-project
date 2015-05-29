@@ -37,12 +37,16 @@ A solution can be to use this peer rating principle and apply it to the open sou
 We can then add some other automatic metrics in the computing of a repository score once we have defined those relevant.
 
 ### How User Karma should work (WIP)
+#### Rules
 * Your Karma gets better when you contribute to a well rated project.* 
 * Your Karma dimishes when projects you contribute to are badly rated.*
 * Looking back, people that initialy rated a project accurately should be rewarded by Karma.
 * **(OPTIONAL)** Karma could also be augmented by Stack-Overflow karma.
 
 *: How much it influences your karma should be proportional to your overall contribution.
+
+#### Score propagation
+* A Karma change **should not** affect the scores that the user voted for.
 
 ### How Repository score should work (WIP)
 #### Rules
@@ -52,6 +56,9 @@ We can then add some other automatic metrics in the computing of a repository sc
 * Weight score with user usage of the repository. ie if we can detect that one user has used a project, then we should give more weight to its rating.
 * We also should ask a user to review its rating 2 months or so after having rated it for the first time so that he can have a more insightful opinion on a project.
 * Dependencies qualities should also affect score.
+
+#### Score propagation
+* A repository score change affects all contributors immediately
 
 #### Scoring criterias 
 Score criterias from 1 to 5. While scoring a user can justify in a comment why he scored the repository as he did.
