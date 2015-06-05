@@ -55,7 +55,7 @@ We can then add some other automatic metrics in the computing of a repository sc
 * A user cannot vote for a repository he contributes to.
 * Weight score with user usage of the repository. ie if we can detect that one user has used a project, then we should give more weight to its rating.
 * We also should ask a user to review its rating 2 months or so after having rated it for the first time so that he can have a more insightful opinion on a project.
-* Dependencies qualities should also affect score.
+* The score of a repository should also be affected by the score in the system of its dependencies. A repository with low score dependencies should not be rated well.
 
 #### Score propagation
 * A repository score change affects all contributors immediately
