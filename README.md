@@ -61,14 +61,17 @@ We can then add some other automatic metrics in the computing of a repository sc
 * A repository score change affects all contributors immediately
 
 #### Scoring criterias 
-Score criterias from 1 to 5. While scoring a user can justify in a comment why he scored the repository as he did.
+Score criterias from 1 to 5. While scoring a user can justify for each criteria his rating in a comment.
 
 * Documentation
 * Code Quality
 * Support
 
-#### Automatic Criterias
+#### Automatic Criterias (Not in first implementation)
 * Community Size
+
+#### Repository owner Feedback
+The UI should also enable the owner of a repository to have details on why the score of his repository is what it is. He/She should also be alble to read the potenatial reviews people might have left when rating the repo.
 
 ## Technical aspects
 
