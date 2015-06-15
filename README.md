@@ -8,6 +8,9 @@ Come and discuss the project with us !
 
 [![Join the chat at https://gitter.im/gitlinks/github-rank-project](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gitlinks/github-rank-project?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## Meetings
+We meet every monday at 20:30 over Skype. If you are interrested in joining us, feel free to ask !
+
 ## The Problem
 There are tons of open-source projects out there, especially in the javascript community, and it is difficult to choose between project that does the same thing.
 
@@ -56,6 +59,8 @@ We can then add some other automatic metrics in the computing of a repository sc
 * Weight score with user usage of the repository. ie if we can detect that one user has used a project, then we should give more weight to its rating.
 * We also should ask a user to review its rating 2 months or so after having rated it for the first time so that he can have a more insightful opinion on a project.
 * The score of a repository should also be affected by the score in the system of its dependencies. A repository with low score dependencies should not be rated well.
+* The score of a repo isn't changed if the Karma of one of the people who voted for it changes.
+* For a repo, the distribution of scores for each criteria should be displayed.
 
 #### Score propagation
 * A repository score change affects all contributors immediately
@@ -64,11 +69,9 @@ We can then add some other automatic metrics in the computing of a repository sc
 Score criterias from 1 to 5. While scoring a user can justify for each criteria his rating in a comment.
 
 * Documentation
-* Code Quality
+* Design
+* Maturity
 * Support
-
-#### Automatic Criterias (Not in first implementation)
-* Community Size
 
 #### Repository owner Feedback
 The UI should also enable the owner of a repository to have details on why the score of his repository is what it is. He/She should also be alble to read the potenatial reviews people might have left when rating the repo.
@@ -78,12 +81,27 @@ The UI should also enable the owner of a repository to have details on why the s
 ### Technologies
 Right now the technologies in the pipeline for the implementation are:
 
+**Plateform**
+
 * Scala
 * Neo4j
 * Play Framework for scala
-* Angular
-* Sass
+* Less
 * Bootstrap
+* Silhouette for auth
+* AnormCypher for requests to the db
+
+**Infra**
+
+* Openshift for opensource project (we have to ask for resources)
+* Docker
+
+### Peopagation algorithm
+Use of an actor model to propagate the score between users and repos
+
+### Storage
+Store score/karma history outside the user/repo node.
+
 
 ## Ideas
 * User badges to display the repository rank and access the rating page of the repository.
