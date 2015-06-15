@@ -104,4 +104,4 @@ Store score/karma history outside the user/repo node.
 
 
 ## Ideas
-* User badges to display the repository rank and access the rating page of the repository.
+* User badges to display the repository rank and access the rating page of the repository. (We will use shield.io)
