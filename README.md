@@ -4,12 +4,8 @@ Project to rate quality of github repositories like we vote for cool posts on ha
 > This Document is an ongoing work on what the project could be and how to get there.
 > Feel free to fork and pull request.
 
-Come and discuss the project with us !
-
-[![Join the chat at https://gitter.im/gitlinks/github-rank-project](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gitlinks/github-rank-project?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 ## Meetings
-We meet every Monday at 20:00 over Skype. If you are interested in joining us, feel free to ask !
+We meet every Monday at 2pm ET over Skype. If you are interested in joining us, feel free to ask !
 
 ## The Problem
 There are tons of open-source projects out there, especially in the JavaScript community, and it is difficult to choose between project that does the same thing.
@@ -19,10 +15,10 @@ Part of the difficulty of choosing is lack of actionable intelligence on key fea
 * Code Quality
 * Community size
 * Support
-* Dependencies
+* Dependencies qualities
 * Documentation
 
-The way we do things is to google the kind of thing we want, check out reviews and comparisons written by peers and finally to look at the documentation to really assess it.
+The way we do things is to google the kind of thing we want, check out reviews and comparisons written by peers, or look at the documentation to really assess it. Maybe we will even try several final projects to decide.
 
 **That's tedious**
 
@@ -50,11 +46,12 @@ We can then add some other automatic metrics in the computing of a repository sc
 
 #### Score propagation
 * A Karma change **should not** affect the scores that the user voted for.
+* Once a user votes for a repository, the score of this repository is updated and the karma of all the contributors to this repository are udpated as well. There is no propagation from these contributors to the repositories they have voted for.
 
 ### How Repository score should work (WIP)
 #### Rules
 * Score is base on some determined criteria evaluated by other users.
-* Score can also be influenced by some key automatic metrics
+* Score can also be influenced by some key automatic metrics.
 * A user cannot vote for a repository he contributes to.
 * Weight score with user usage of the repository. If we can detect that one user has used a project, then we should give more weight to its rating.
 * We also should ask a user to review its rating 2 months or so after having rated it for the first time so that he can have a more insightful opinion on a project.
@@ -74,7 +71,7 @@ Score criteria from 1 to 5. While scoring a user can justify for each criteria h
 * Support
 
 #### Repository owner Feedback
-The UI should also enable the owner of a repository to have details on why the score of his repository is what it is. He/She should also be alble to read the potenatial reviews people might have left when rating the repo.
+The UI should also enable the owner of a repository to have details on why the score of his repository is what it is. He/She should also be alble to read the potential reviews people might have left when rating the repo.
 
 ## Technical aspects
 
@@ -86,13 +83,8 @@ Right now the technologies in the pipeline for the implementation are:
 * Scala
 * Neo4j
 * Play Framework for Scala
-* Less
-* Bootstrap
+* Semantic-UI
 * Silhouette for authentication with GitHub
-
-**Infra**
-
-* Docker
 
 ### Propagation algorithm
 Use of an actor model to propagate the score between users and repos
@@ -108,8 +100,7 @@ Furthermore, contributions should be merged so that only the timestamp of the la
 Store score/karma history outside the user/repo node.
 
 ### Badge
-
-Using shield.io to have svg badges.
+Using shield.io models to have svg badges.
 
 ![badge](https://img.shields.io/badge/gitrank%20score-3%2F5-yellow.svg)
 
@@ -117,5 +108,5 @@ Using shield.io to have svg badges.
 
 * This one is the general repository project. It is where we discuss general matters of the project.
 * [Gitrank-web](https://github.com/gitlinks/gitrank-web) : implementation
-* [Docker-builds](https://github.com/gitlinks/docker-builds): Builds of the implementation
+* [Docker-builds](https://github.com/gitlinks/docker-builds): Builds of the implementation (Deprecated)
 * [Notebooks](https://github.com/gitlinks/notebooks): algorithm prototyping with ipython notebook
