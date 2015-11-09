@@ -110,3 +110,4 @@ Using shield.io models to have svg badges.
 * [Gitrank-web](https://github.com/gitlinks/gitrank-web) : implementation
 * [Docker-builds](https://github.com/gitlinks/docker-builds): Builds of the implementation (Deprecated)
 * [Notebooks](https://github.com/gitlinks/notebooks): algorithm prototyping with ipython notebook
+* [Github-indexer](https://github.com/gitlinks/github-indexer): Akka module for indexing github information on Elasticsearch.
